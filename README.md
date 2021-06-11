@@ -3,7 +3,7 @@ About r-snftool
 
 Home: https://CRAN.R-project.org/package=SNFtool
 
-Package license: GPL
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-snftool-feedstock/blob/master/LICENSE.txt)
 
