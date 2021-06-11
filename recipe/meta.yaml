@@ -23,16 +23,15 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-exposition
     - r-alluvial
-    - r-heatmap.plus
   run:
     - r-base
     - r-exposition
     - r-alluvial
-    - r-heatmap.plus
 
 test:
   commands:
@@ -41,10 +40,11 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=SNFtool
-  license: GPL
+  license: GPL-2.0-or-later
   summary: Similarity Network Fusion takes multiple views of a network and fuses them together to construct an overall status matrix. The input to our algorithm can be feature vectors, pairwise distances, or pairwise similarities. The learned status matrix can then be used for retrieval, clustering, and classification.
   license_family: GPL
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
