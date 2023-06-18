@@ -1,11 +1,11 @@
-About r-snftool
-===============
+About r-snftool-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-snftool-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=SNFtool
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-snftool-feedstock/blob/main/LICENSE.txt)
 
 Summary: Similarity Network Fusion takes multiple views of a network and fuses them together to construct an overall status matrix. The input to our algorithm can be feature vectors, pairwise distances, or pairwise similarities. The learned status matrix can then be used for retrieval, clustering, and classification.
 
